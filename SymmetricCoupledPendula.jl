@@ -75,7 +75,6 @@ function SymmetricCoupledPendula(x₀,v₀,m,l,k)
     LaterPositionVector = [round(x(t)[1], digits=3); round(x(t)[2], digits=3)]
     println()
 
-
     # Printing solutions for x₁(t) and x₂(t)
     x₁_part1 = "$(round(Aₚ * 1/√2, digits=2))cos($(round(ωₚ, digits=2))t + $(round(ϕₚ, digits=2)))"
     x₁_part2 = "$(round(Aᵦ * 1/√2, digits=2))cos($(round(ωᵦ, digits=2))t + $(round(ϕᵦ, digits=2)))"
