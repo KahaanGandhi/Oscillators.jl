@@ -65,8 +65,8 @@ function SymmetricCoupledPendula(x₀,v₀,m,l,k)
     x_part1 = "$(round(Aₚ, digits=2)) (1 ÷ √2)cos($(round(ωₚ, digits=2))t + $(round(ϕₚ, digits=2)))"
     x_part2 = "$(round(Aᵦ, digits=2)) (1 ÷ √2)cos($(round(ωᵦ, digits=2))t + $(round(ϕᵦ, digits=2)))"
     println("x(t) = " * x_part1 * " × [1; 1] + " * x_part2 * " × [1; -1]")
-    x_part1_calc = "$(round(Aₚ * 1/sqrt(2), digits=2))cos($(round(ωₚ, digits=2))t + $(round(ϕₚ, digits=2)))"
-    x_part2_calc = "$(round(Aᵦ * 1/sqrt(2), digits=2))cos($(round(ωᵦ, digits=2))t + $(round(ϕᵦ, digits=2)))"
+    x_part1_calc = "$(round(Aₚ * 1/√2, digits=2))cos($(round(ωₚ, digits=2))t + $(round(ϕₚ, digits=2)))"
+    x_part2_calc = "$(round(Aᵦ * 1/√2, digits=2))cos($(round(ωᵦ, digits=2))t + $(round(ϕᵦ, digits=2)))"
     println("x(t) = " * x_part1_calc * " × [1; 1] + " * x_part2_calc * " × [1; -1]")
 
     # Checking t = 0, and at variable time t
@@ -77,11 +77,11 @@ function SymmetricCoupledPendula(x₀,v₀,m,l,k)
 
 
     # Printing solutions for x₁(t) and x₂(t)
-    x₁_part1 = "$(round(Aₚ * 1/sqrt(2), digits=2))cos($(round(ωₚ, digits=2))t + $(round(ϕₚ, digits=2)))"
-    x₁_part2 = "$(round(Aᵦ * 1/sqrt(2), digits=2))cos($(round(ωᵦ, digits=2))t + $(round(ϕᵦ, digits=2)))"
+    x₁_part1 = "$(round(Aₚ * 1/√2, digits=2))cos($(round(ωₚ, digits=2))t + $(round(ϕₚ, digits=2)))"
+    x₁_part2 = "$(round(Aᵦ * 1/√2, digits=2))cos($(round(ωᵦ, digits=2))t + $(round(ϕᵦ, digits=2)))"
     println("x₁(t) = " * x₁_part1 * " + " * x₁_part2)
-    x₂_part1 = "$(round(Aₚ * 1/sqrt(2), digits=2))cos($(round(ωₚ, digits=2))t + $(round(ϕₚ, digits=2)))"
-    x₂_part2 = "$(round(Aᵦ * 1/sqrt(2), digits=2))cos($(round(ωᵦ, digits=2))t + $(round(ϕᵦ, digits=2)))"
+    x₂_part1 = "$(round(Aₚ * 1/√2, digits=2))cos($(round(ωₚ, digits=2))t + $(round(ϕₚ, digits=2)))"
+    x₂_part2 = "$(round(Aᵦ * 1/√2, digits=2))cos($(round(ωᵦ, digits=2))t + $(round(ϕᵦ, digits=2)))"
     println("x₂(t) = " * x₂_part1 * " - " * x₂_part2)
     println()
 
