@@ -20,11 +20,10 @@ using LinearAlgebra
 x₀ = [5; 0; 2]
 v₀ = [2; 7; 0]
 m = 2.5
-l = 0.45
 k = 10
 t = 4
 
-function solve_three_EoMs(x₀,v₀,m,l,k,t)
+function solve_three_EoMs(x₀,v₀,m,k,t)
 
     ω₀ = √(k/m)
     A = [ 1 -1  1; √2  0 -√2; 1  1  1]
@@ -43,6 +42,7 @@ function solve_three_EoMs(x₀,v₀,m,l,k,t)
     A₃ = √(ReC₃^2 + ImC₃^2); ϕ₃ = atan(ImC₃, ReC₃)
 
     x(t) = A₁*cos(ω₁*t + ϕ₁)*e₁ + A₂*cos(ω₂*t + ϕ₂)*e₂ + A₃*cos(ω₃*t + ϕ₃)*e₃
+    InitialPositionVector = x(0)
 
     A₁_RND = round(A₁, digits=2); ω₁_RND = round(ω₁, digits=2); ϕ₁_RND = round(ϕ₁, digits=2)
     A₂_RND = round(A₂, digits=2); ω₂_RND = round(ω₂, digits=2); ϕ₂_RND = round(ϕ₂, digits=2)
@@ -52,9 +52,9 @@ function solve_three_EoMs(x₀,v₀,m,l,k,t)
     println("x₂(t) = $(A₁_RND)cos($(ω₁_RND)t + $(ϕ₁_RND)) + $(A₂_RND)cos($(ω₂_RND)t + $(ϕ₂_RND)) - $(A₃_RND)cos($(ω₃_RND)t + $(ϕ₃_RND))")
     println("x₃(t) = $(A₁_RND)cos($(ω₁_RND)t + $(ϕ₁_RND)) - $(A₂_RND)cos($(ω₂_RND)t + $(ϕ₂_RND)) + $(A₃_RND)cos($(ω₃_RND)t + $(ϕ₃_RND))")
 
-    println("At t = 0s, calculated x(t) is [$(round.(position_at_t0, digits=2))], which ", x(0) ≈ x₀ ? "agrees" : "does NOT agree", " with given x₀ of ", x₀)
+    println("At t = 0s, calculated x(t) is [$(round.(InitialPositionVector, digits=2))], which ", x(0) ≈ x₀ ? "agrees" : "does NOT agree", " with given x₀ of ", x₀)
     println("At t = ", t, "s, x(t) = ", round.(x(t), digits=2))
     
 end
 
-solveEoMs(x₀,v₀,m,l,k,t)
+solve_three_EoMs(x₀,v₀,m,k,t)
