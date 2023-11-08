@@ -1,2 +1,2 @@
-# PendulumSolvers.jl
-An assortment of Julia-based solvers for the equations of motion of various pendulum systems.
+# DynamicSolvers.jl
+Julia-based solvers for the equations of motion of various spring, pendulum, and mass systems.
