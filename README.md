@@ -49,7 +49,7 @@ $ cd Oscillations.jl
 
 ## Installing Dependencies
 
-To install the Julia's 'LinearAlgebra' package:
+To install the Julia's `LinearAlgebra` package:
 
 ```bash
 $ julia
