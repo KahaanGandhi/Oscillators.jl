@@ -4,10 +4,9 @@ Oscillations.jl provides computational tools to study and solve the equations of
 ## Contents
 The repository is a mix of Julia scripts (`.jl`) and Jupyter notebooks (`.ipynb`).
 - **Julia Scripts**: Computation-oriented, harnessing Julia's high performance scientific computing capabilities
-- **Jupyter Notebooks**: Physics-focused, covering the relavent linear algebra and numerical methods for each system
-
+- **Jupyter Notebooks**: Physics-focused, covering the relavent linear algebra and numerical methods
 ## Installation Instructions
-To use Oscillations.jl, you will need to have Julia installed, as well as a Jupyter environment capable of running Julia notebooks.
+You will need to have Julia installed, as well as a Jupyter environment capable of running Julia notebooks.
 
 ### Installing Julia
 
@@ -41,7 +40,7 @@ julia> Pkg.add("IJulia")
 
 ## Cloning the Repository
 
-To clone the repository to your local machine, run:
+To clone the repository to your local machine:
 
 ```bash
 $ git clone https://github.com/KahaanGandhi/Oscillations.jl.git
@@ -50,7 +49,7 @@ $ cd Oscillations.jl
 
 ## Installing Dependencies
 
-To install the required Julia dependencies, start Julia and run:
+To install the Julia's 'LinearAlgebra' package:
 
 ```bash
 $ julia
