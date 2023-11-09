@@ -1,10 +1,10 @@
 # Oscillators.jl
-Welcome to `Oscillations.jl`, a repository of Julia scripts and Jupyter notebooks maintained by [@KahaanGandhi](https://github.com/KahaanGandhi). This repository provides computational tools and educational resources to study and solve the equations of motion for a variety of spring, mass, and pendulum systems. 
+Oscillations.jl provides computational tools to study and solve the equations of motion for a variety of spring, mass, and pendulum systems.
 
 ## Contents
 The repository is a mix of Julia scripts (`.jl`) and Jupyter notebooks (`.ipynb`).
-- **Julia Scripts**: These are computation-oriented, harnessing Julia's optimized performance for scientific computing
-- **Jupyter Notebooks**: The notebooks cover the physics of each dynamic system, with explanations of the linear algebra and numerical methods involved.
+- **Julia Scripts**: Computation-oriented, harnessing Julia's high performance scientific computing capabilities
+- **Jupyter Notebooks**: Physics-focused, covering the linear algebra and numerical methods involved in each system
 
 ## Installation Instructions
 To use Oscillations.jl, you will need to have Julia installed, as well as a Jupyter environment capable of running Julia notebooks.
@@ -16,29 +16,51 @@ To use Oscillations.jl, you will need to have Julia installed, as well as a Jupy
 
 ### Setting Up Jupyter with Julia
 
-1. If you don't have Jupyter installed, you can choose one of the following methods:
-   - Via Anaconda: Download and install Anaconda from [here](https://www.anaconda.com/products/individual).
-   - Via pip (if you have Python installed):
-     ```bash
-     pip install notebook
-     ```
-2. Once Jupyter is installed, you'll need to add the Julia kernel. Start Julia and run:
-   ```julia
-   using Pkg
-   Pkg.add("IJulia")
+If Jupyter is not installed, use one of the following methods:
 
-### Cloning the Repository
+- **Via Anaconda**:
+  ```bash
+  wget https://www.anaconda.com/products/individual # Download Anaconda installer
+  sh ~/Downloads/Anaconda3-2022.05-Linux-x86_64.sh  # Run Anaconda installer
+  conda install -c conda-forge notebook              # Install Jupyter Notebook
+  ```
 
-To begin, clone the repository to your local machine:
+- **Via pip** (if Python is already installed):
+  ```bash
+  pip install notebook 
+  ```
+
+After Jupyter is installed, add the Julia kernel by starting Julia in the terminal:
+
+```bash
+julia 
+```
+
+Inside the Julia REPL, run:
+
+```julia
+using Pkg
+Pkg.add("IJulia")
+```
+
+## Cloning the Oscillations.jl Repository
+
+To clone the repository to your local machine, run:
 
 ```bash
 git clone https://github.com/KahaanGandhi/Oscillations.jl.git
-cd Oscillations.jl 
+cd Oscillations.jl
 ```
 
-### Dependencies
+## Installing Dependencies
 
-The code in this repository relies on Julia's built-in `LinearAlgebra` module for many computations. To ensure you have access to these features, start Julia and enter the following:
+To install the required Julia dependencies, start Julia and run:
+
+```bash
+julia 
+```
+
+Inside the Julia REPL, execute:
 
 ```julia
 using Pkg
