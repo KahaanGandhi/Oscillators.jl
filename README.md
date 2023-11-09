@@ -4,7 +4,7 @@ Oscillations.jl provides computational tools to study and solve the equations of
 ## Contents
 The repository is a mix of Julia scripts (`.jl`) and Jupyter notebooks (`.ipynb`).
 - **Julia Scripts**: Computation-oriented, harnessing Julia's high performance scientific computing capabilities
-- **Jupyter Notebooks**: Physics-focused, covering the linear algebra and numerical methods involved in each system
+- **Jupyter Notebooks**: Physics-focused, covering the relavent linear algebra and numerical methods for each system
 
 ## Installation Instructions
 To use Oscillations.jl, you will need to have Julia installed, as well as a Jupyter environment capable of running Julia notebooks.
@@ -22,21 +22,22 @@ If Jupyter is not installed, use one of the following methods:
   - Visit the [Anaconda download page](https://www.anaconda.com/products/individual) and download the installer for your operating system.
   - Follow the installation instructions on the website.
   - Once Anaconda is installed, open your terminal and run:
-    ```bash
-    $ conda install -c conda-forge notebook
-    ```
+```bash
+$ conda install -c conda-forge notebook
+```
 
 - **Via pip** (if Python is already installed):
   - Open your terminal and run:
-    ```bash
-    $ pip install notebook
-    ```
+```bash
+$ pip install notebook
+```
 
 After Jupyter is installed, add the Julia kernel:
 ```bash
 $ julia
 julia> using Pkg
 julia> Pkg.add("IJulia")
+```
 
 ## Cloning the Repository
 
