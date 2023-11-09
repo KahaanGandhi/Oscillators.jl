@@ -19,37 +19,32 @@ To use Oscillations.jl, you will need to have Julia installed, as well as a Jupy
 If Jupyter is not installed, use one of the following methods:
 
 - **Via Anaconda**:
-  ```bash
-  wget https://www.anaconda.com/products/individual # Download Anaconda installer
-  sh ~/Downloads/Anaconda3-2022.05-Linux-x86_64.sh  # Run Anaconda installer
-  conda install -c conda-forge notebook              # Install Jupyter Notebook
-  ```
+  - Visit the [Anaconda download page](https://www.anaconda.com/products/individual) and download the installer for your operating system.
+  - Follow the installation instructions on the website.
+  - Once Anaconda is installed, open your terminal and run:
+    ```bash
+    $ conda install -c conda-forge notebook
+    ```
 
 - **Via pip** (if Python is already installed):
-  ```bash
-  pip install notebook 
-  ```
+  - Open your terminal and run:
+    ```bash
+    $ pip install notebook
+    ```
 
-After Jupyter is installed, add the Julia kernel by starting Julia in the terminal:
-
+After Jupyter is installed, add the Julia kernel:
 ```bash
-julia 
-```
+$ julia
+julia> using Pkg
+julia> Pkg.add("IJulia")
 
-Inside the Julia REPL, run:
-
-```julia
-using Pkg
-Pkg.add("IJulia")
-```
-
-## Cloning the Oscillations.jl Repository
+## Cloning the Repository
 
 To clone the repository to your local machine, run:
 
 ```bash
-git clone https://github.com/KahaanGandhi/Oscillations.jl.git
-cd Oscillations.jl
+$ git clone https://github.com/KahaanGandhi/Oscillations.jl.git
+$ cd Oscillations.jl
 ```
 
 ## Installing Dependencies
@@ -57,14 +52,11 @@ cd Oscillations.jl
 To install the required Julia dependencies, start Julia and run:
 
 ```bash
-julia 
+$ julia
+julia> using Pkg
+julia> Pkg.add("LinearAlgebra")
 ```
 
-Inside the Julia REPL, execute:
 
-```julia
-using Pkg
-Pkg.add("LinearAlgebra")
-```
 
 
