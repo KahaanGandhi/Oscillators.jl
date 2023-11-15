@@ -48,10 +48,6 @@ function solve_three_EoMs(x₀,v₀,m,k,t)
     A₂_RND = round(A₂, digits=2); ω₂_RND = round(ω₂, digits=2); ϕ₂_RND = round(ϕ₂, digits=2)
     A₃_RND = round(A₃, digits=2); ω₃_RND = round(ω₃, digits=2); ϕ₃_RND = round(ϕ₃, digits=2)
 
-    println("x₁(t) = $(A₁_RND)cos($(ω₁_RND)t + $(ϕ₁_RND)) + $(A₂_RND)cos($(ω₂_RND)t + $(ϕ₂_RND)) + $(A₃_RND)cos($(ω₃_RND)t + $(ϕ₃_RND))")
-    println("x₂(t) = $(A₁_RND)cos($(ω₁_RND)t + $(ϕ₁_RND)) + $(A₂_RND)cos($(ω₂_RND)t + $(ϕ₂_RND)) - $(A₃_RND)cos($(ω₃_RND)t + $(ϕ₃_RND))")
-    println("x₃(t) = $(A₁_RND)cos($(ω₁_RND)t + $(ϕ₁_RND)) - $(A₂_RND)cos($(ω₂_RND)t + $(ϕ₂_RND)) + $(A₃_RND)cos($(ω₃_RND)t + $(ϕ₃_RND))")
-
     println("At t = 0s, calculated x(t) is [$(round.(InitialPositionVector, digits=2))], which ", x(0) ≈ x₀ ? "agrees" : "does NOT agree", " with given x₀ of ", x₀)
     println("At t = ", t, "s, x(t) = ", round.(x(t), digits=2))
     
