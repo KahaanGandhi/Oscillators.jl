@@ -1,4 +1,3 @@
-# Oscillators.jl
 Oscillations.jl provides computational tools to study and solve the equations of motion for a variety of spring, mass, and pendulum systems.
 
 ## Contents
