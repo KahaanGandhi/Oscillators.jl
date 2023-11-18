@@ -4,7 +4,7 @@ Oscillations.jl provides computational tools to study and solve the equations of
 ## Contents
 The repository is a mix of Julia scripts (`.jl`) and Jupyter notebooks (`.ipynb`). File names indicate the number of masses and the setup of the system. 
 - **Julia Scripts**: Computation-oriented, harnessing Julia's high performance scientific computing capabilities
-- **Jupyter Notebooks**: Physics-focused, covering the relavent linear algebra and numerical methods
+- **Jupyter Notebooks**: Physics-focused, covering the relavent linear algebra and analytical methods
 ## Installation Instructions
 You will need to have Julia installed, as well as a Jupyter environment capable of running Julia notebooks.
 
