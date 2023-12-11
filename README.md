@@ -1,9 +1,10 @@
-Oscillations.jl provides computational tools to study and solve the equations of motion for a variety of spring, mass, and pendulum systems.
-
 ## Contents
-The repository is a mix of Julia scripts (`.jl`) and Jupyter notebooks (`.ipynb`). File names indicate the number of masses and the setup of the system. 
-- **Julia Scripts**: Computation-oriented, harnessing Julia's high performance scientific computing capabilities
-- **Jupyter Notebooks**: Physics-focused, covering the relavent linear algebra and analytical methods
+This repository combines Julia scripts with analytical walkthroughs, providing tools to study and solve a range of physical and mathemtical concepts, unified by their inherent oscillatory nature. 
+- `mass-systems`: Covers a range of spring, mass, string, and pendula systems, emphasizing the generalization from discrete to continous systems
+- `travelling-waves`: Explores the wave equation and Maxwell's equations, reviewing relavent vector, differential, and integral calculus 
+- `fourier-series`: Introduces Fourier series and analysis, with classic examples 
+- `julia-scripts`: Computation-oriented, harnessing Julia's high performance scientific computing capabilities
+
 ## Installation Instructions
 You will need to have Julia installed, as well as a Jupyter environment capable of running Julia notebooks.
 
