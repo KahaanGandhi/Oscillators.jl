@@ -3,7 +3,7 @@ This repository combines Julia scripts with analytical walkthroughs, providing t
 - `mass-systems`: Covers a range of spring, mass, string, and pendula systems, emphasizing the generalization from discrete to continous systems
 - `travelling-waves`: Explores the wave equation and Maxwell's equations, reviewing relavent vector, differential, and integral calculus 
 - `fourier-series`: Introduces Fourier series and analysis, with classic examples 
-- `julia-scripts`: Computation-oriented, harnessing Julia's high performance scientific computing capabilities
+- `julia-scripts`: Computation-oriented, harnesses Julia's high performance scientific computing capabilities
 
 ## Installation Instructions
 You will need to have Julia installed, as well as a Jupyter environment capable of running Julia notebooks.
